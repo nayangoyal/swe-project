@@ -1,0 +1,79 @@
+.thank-you-container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    text-align: center;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    opacity: 0;
+    transform: scale(0.8);
+    transition: opacity 0.5s, transform 0.5s;
+    height: 55vh;
+  }
+  
+  .thank-you-container.show-content {
+    opacity: 1;
+    transform: scale(1);
+  }
+  
+  .tick-image {
+    width: 150px; /* Adjust the size as needed */
+    height: 150px; /* Adjust the size as needed */
+    background: url('../images/thankyoutick.png') center center no-repeat;
+    background-size: contain;
+    margin: 20px auto;
+    animation: zoomOut 0.5s ease-out;
+  }
+  
+  @keyframes zoomOut {
+    from {
+      transform: scale(0);
+    }
+    to {
+      transform: scale(1);
+    }
+  }
+  
+  .thank-you-container h1 {
+    color: #333;
+  }
+  
+  .thank-you-container p {
+    color: #666;
+    margin-bottom: 15px;
+  }
+  
+  .required{
+    margin-top: 5px;
+  }
+
+  .required::before{
+    content: " * ";
+    color: red;
+    margin-left: 8px;
+  }
+
+  
+
+  /* Responsive styles for smaller screens */
+@media only screen and (max-width: 768px) {
+    .thank-you-container {
+      max-width: 90%;
+      height: auto;
+    }
+  
+    .tick-image {
+      width: 100px;
+      height: 100px;
+    }
+  
+    .thank-you-container h1 {
+      font-size: 24px;
+    }
+  
+    .thank-you-container p {
+      font-size: 16px;
+    }
+  }

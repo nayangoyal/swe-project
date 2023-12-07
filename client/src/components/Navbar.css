@@ -1,0 +1,128 @@
+/* Navbar Styles */
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100;200;300;400;500;600;700;800;900&family=Poppins:wght@100;200;300;400&display=swap');
+
+.navbar {
+    padding-top: 0rem;
+    padding-bottom: 0rem;
+  }
+  
+  .navbar-brand img {
+    color: black;
+    margin: 9px 13px 14px 21px;
+  }
+  
+  .navbar-toggler {
+    background-color: transparent;
+    border: none;
+  }
+  
+  .navbar-toggler-icon {
+    background-color: #e5a638;
+    width: 2.5em
+  }
+  
+  .navbar-nav {
+    margin-left: 268px;
+  }
+  
+  .navbar-nav a {
+    font-family: 'Lexend', sans-serif;
+font-family: 'Poppins', sans-serif;
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin-right: 20px;
+    color: black;
+    text-transform: capitalize;
+  }
+  
+  .navbar-text {
+    margin-right: 40px;
+  }
+  
+  .form-inline button {
+    background-color: black;
+    color: white;
+    border-radius: 20px;
+    border-color: black;
+    padding: 5px 23px 5px 23px;
+  }
+
+  .navbar-toggler:focus {
+    box-shadow: 0 0 0 0.05rem;
+  }
+  /* Responsive Styles */
+  
+  @media (max-width: 991.98px) {
+    .navbar-nav {
+      margin-left: 0;
+    }
+  
+    .navbar-collapse {
+      margin-right: 0;
+    }
+  
+    .navbar-brand img {
+      margin-left: 13px;
+      margin-right: 13px;
+    }
+  
+    .navbar-text {
+      margin-right: 0;
+    }
+  
+    .navbar-nav {
+      margin-left: 0 !important;
+    }
+  
+    .navbar-nav a {
+      font-size: 20px;
+      margin-right: 10px;
+    }
+  
+    .form-inline button {
+      padding: 5px 15px;
+    }
+  }
+
+  .square-border {
+    border: 5px solid #000; /* Adjust the border properties as needed */
+    border-radius: 5px; /* Adjust the border-radius as needed for a rounded look */
+    padding: 0px; /* Adjust padding to add space around the icon */
+  }
+  
+  /* Additional Responsive Styles for Larger Screens */
+
+  @media (min-width: 1536px) {
+    .navbar-nav{
+        margin-left: 240px;
+    }
+  }
+
+  @media (max-width: 1024px) {
+    .navbar-nav {
+      margin-left: 100px;
+    }
+  }
+
+  /* Responsive Styles for Smaller Screens */
+  @media (max-width: 767.98px) {
+    .navbar-brand img {
+      margin-left: 10px;
+      margin-right: 10px;
+    }
+
+    .navbar-text {
+      margin-right: 10px;
+    }
+
+    .navbar-nav a {
+      font-size: 18px;
+      margin-right: 5px;
+    }
+
+    .form-inline button {
+      padding: 5px 10px;
+    }
+  }

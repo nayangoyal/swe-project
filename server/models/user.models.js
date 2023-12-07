@@ -21,6 +21,14 @@ const StudentSchema = new Schema({
     verified:{
         type: Boolean,
         default: false,
+    },
+    verificationExpiresAt: {
+        type: Date,
+        default: () => new Date(Date.now() + 5 * 60 * 1000),
+    },
+    history:{
+        type:Array,
+        default:[]
     }
 });
 

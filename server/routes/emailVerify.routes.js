@@ -21,17 +21,18 @@ router.route('/email_verify').post(async(req,res) =>{
 
 router.route('/verify_email').post(async(req,res) => {
     try{
-        console.log("success 1");
+        console.log("success 11");
         let { collegeEmailID , otp } = req.body;
-        console.log("success 2");
+        console.log("success 21");
         if(!(collegeEmailID && otp))
         {
             throw Error("Empty otp details are not allowed");
+            // res.json({ success: false, message: 'Empty otp details are not allowed' });
         }
-        console.log("success 3");
+        console.log("success 31");
         await verifyUserEmail({ collegeEmailID, otp });
-        console.log("success 4");
-        res.status(200).json({ collegeEmailID, verified: true});
+        console.log("success 41");
+        res.status(200).json({ success: true, collegeEmailID, verified: true});
     } catch(error)
     {
         res.status(400).send(error.message);

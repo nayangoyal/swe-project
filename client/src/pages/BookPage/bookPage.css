@@ -1,0 +1,74 @@
+.book-page{
+    display: flex;
+    justify-content: center;
+    background-color: rgb(245, 235, 224);
+}
+.filldetails {
+    margin: 40px;
+    width: 100%;
+    margin-right: 0px;
+    height: 50%;
+  }
+  
+.filldetails h3 {
+    font-size: xx-large;
+    text-align: center;
+}
+
+.form-book{
+    position: relative;
+    z-index: 1;
+    background: rgba(194, 143, 84, 0.21);
+    max-width: 500px;
+    height: 90%;
+    margin: 0 auto 100px;
+    padding: 45px;
+    text-align: center;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+    padding-top: 25px;
+}
+
+.form-book input{
+    font-family: "Roboto", sans-serif;
+  outline: 0;
+  background: #f2f2f2ba;
+  width: 100%;
+  border: 0;
+  margin: 0 0 15px;
+  padding: 15px;
+  box-sizing: border-box;
+  font-size: 14px;
+  border-radius: 15px;
+}
+
+.book-detail-history{
+    margin: 40px;
+    background-color: #f4e8db;
+    margin-left: 0px;
+    width: 100%;
+}
+
+.book-detail-history h3{
+    font-size: xx-large;
+    text-align: center;
+    padding-top: 15px;
+    text-decoration: underline;
+}
+
+.booking-card {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 10px;
+  }
+
+  .booking-card.cancelled {
+    background-color: #f4051d; /* red color for cancelled status */
+  }
+  
+  .booking-card.accepted {
+    background-color: #68e46c; /* green color for accepted status */
+  }
+  
+  .booking-card.requested {
+    background-color: rgb(17, 202, 244); /* blue color for requested status */
+  }

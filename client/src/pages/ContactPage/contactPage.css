@@ -1,0 +1,65 @@
+.contact-part{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-top: 50px;
+    background-color: #F5EBE0;
+}
+
+.contact-part .gmap{
+    display: flex;
+    justify-content: center;
+    width: 664px;
+    height: 795px;
+    background-color: #F5EBE0;
+}
+
+.contact-part .contacts{
+    background-color: #f4e8db;
+    /* mix-blend-mode: color-burn; */
+    width: 633px;
+    height: 795px;
+    margin-bottom: 45px;
+}
+/* MapComponent.css */
+.mapouter {
+    position: relative;
+    height: 795px;
+    width: 664px;
+    background: #F5EBE0;
+  }
+  
+  .gmap_canvas {
+    overflow: hidden;
+    height: 795px;
+    width: 664px;
+  }
+  
+  .gmap_canvas iframe {
+    position: relative;
+    z-index: 2;
+  }
+  
+  .maprouter a {
+    color: #fff !important;
+    position: absolute !important;
+    top: 0 !important;
+    z-index: 0 !important;
+  }
+  
+  .contacts-inner{
+    width: 594px;
+    height: 564px;
+    margin-top: 102px;
+    margin-left: 100px;
+    margin-bottom: 129px;
+  }
+
+  .contacts-text{
+    color: #000;
+    font-family: Inter;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+  }
