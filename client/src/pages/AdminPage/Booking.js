@@ -79,7 +79,7 @@ const Booking = () => {
 
     const getAvailableRequest = async () => {
         const response = await axios.get(
-            "http://localhost:5000/roombook/availableRequest",
+            "http://swe-project-mauve.vercel.app/roombook/availableRequest",
         );
         setData(response.data);
         console.log(response.data);
@@ -106,7 +106,7 @@ const Booking = () => {
       console.log("DATAAAAAAA2");
       console.log(id);
         const { dataUser } = await axios.post(
-            "http://localhost:5000/roombook/acceptRequest",
+            "http://swe-project-mauve.vercel.app/roombook/acceptRequest",
         JSON.stringify({ _id: id }),
         config,
       );
@@ -122,7 +122,7 @@ const Booking = () => {
         };
       console.log("DATAAAAAAA2");
         const { dataUser } = await axios.post(
-            "http://localhost:5000/roombook/cancelBooking",
+            "http://swe-project-mauve.vercel.app/roombook/cancelBooking",
         JSON.stringify({ _id: id }),
         config,
       );
