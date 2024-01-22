@@ -10,7 +10,7 @@ const CreateRoom = () => {
     event.preventDefault();
 
     try {
-      const response = await axios.post('http://localhost:5000/roombook/createRoom', {
+      const response = await axios.post('http://swe-project-mauve.vercel.app/roombook/createRoom', {
         roomId,
         type,
       });
