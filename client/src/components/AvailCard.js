@@ -42,7 +42,7 @@ const AvailCard = () => {
       const handleSubmit = async (e) => {
         e.preventDefault();
 
-        await axios.get('http://localhost:5000/roombook/checkRoom', {
+        await axios.get('http://swe-project-mauve.vercel.app/roombook/checkRoom', {
           params: {
             arrivalTime: arrivalTime.toISOString(), // Convert to ISO string format
             departureTime: departureTime.toISOString(),
