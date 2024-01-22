@@ -250,7 +250,7 @@ export const BookNow = () => {
 
   const fetchBookingDetails = async () => {
     try {
-      const response = await axios.get('http://localhost:5000/authentication/profile');
+      const response = await axios.get('http://swe-project-mauve.vercel.app/authentication/profile');
       setBookingDetails(response.data);
     } catch (error) {
       console.error('Error fetching booking details:', error);
@@ -274,7 +274,7 @@ export const BookNow = () => {
 
   const handleSubmit = async () => {
     try {
-      const response = await axios.post('http://localhost:5000/roombook/bookRoom', {
+      const response = await axios.post('http://swe-project-mauve.vercel.app/roombook/bookRoom', {
         studentName: studentName,
         studentEmail: studentEmail,
         guestName: guestName,
