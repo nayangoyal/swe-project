@@ -24,7 +24,7 @@ const Login = () => {
       };
       console.log("DATAAAAAAA2");
       const response = await axios.post(
-        "http://https://swe-project-m48k.onrender.com/authentication/login",
+        "http://swe-project-m48k.onrender.com/authentication/login",
         JSON.stringify({ collegeEmailID: email, password: password }),
         config,
       );
