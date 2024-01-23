@@ -32,7 +32,7 @@ const OTP = (props) => {
         // e.preventDefault();
     
         try{
-          const response = await axios.post('http://swe-project-mauve.vercel.app/emailverify/verify_email', {
+          const response = await axios.post('http://https://swe-project-m48k.onrender.com/emailverify/verify_email', {
             collegeEmailID: props.collegeEmailID,
             otp: otp,
           });
