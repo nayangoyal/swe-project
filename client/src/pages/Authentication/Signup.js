@@ -28,7 +28,7 @@ const Signup = () => {
     try {
       // Validate other form data here if needed
 
-      const response = await axios.post('http://https://swe-project-m48k.onrender.com/authentication/signup', {
+      const response = await axios.post('http://swe-project-m48k.onrender.com/authentication/signup', {
         fullName,
         collegeEmailID: collegeEmail,
         password,
