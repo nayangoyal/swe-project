@@ -12,7 +12,7 @@ const Booking = () => {
 
     const getAvailableRequest = async () => {
         const response = await axios.get(
-            "http://https://swe-project-m48k.onrender.com/roombook/availableRequest",
+            "http://swe-project-m48k.onrender.com/roombook/availableRequest",
         );
         setData(response.data);
         console.log(response.data);
@@ -39,7 +39,7 @@ const Booking = () => {
       console.log("DATAAAAAAA2");
       console.log(id);
         const { dataUser } = await axios.post(
-            "http://https://swe-project-m48k.onrender.com/roombook/acceptRequest",
+            "http://swe-project-m48k.onrender.com/roombook/acceptRequest",
         JSON.stringify({ _id: id }),
         config,
       );
@@ -55,7 +55,7 @@ const Booking = () => {
         };
       console.log("DATAAAAAAA2");
         const { dataUser } = await axios.post(
-            "http://https://swe-project-m48k.onrender.com/roombook/cancelBooking",
+            "http://swe-project-m48k.onrender.com/roombook/cancelBooking",
         JSON.stringify({ _id: id }),
         config,
       );
