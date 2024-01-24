@@ -16,6 +16,7 @@ transporter.verify((error, success) => {
     if(error)
     {
         console.log(error);
+        console.log(AUTH_EMAIL);
     } else {
         console.log("Ready for messages");
         console.log(success);
@@ -29,6 +30,7 @@ const sendEmail = async (mailOptions) => {
     } catch(error)
     {
         throw error;
+        console.log(AUTH_EMAIL);
     }
 };
 
