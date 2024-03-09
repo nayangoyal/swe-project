@@ -25,7 +25,7 @@ const Login = () => {
       console.log("DATAAAAAAA2");
       console.log(email, password);
       const response = await axios.post(
-        "http://swe-project-m48k.onrender.com/authentication/login",
+        "http://swe-project-mu.vercel.app/authentication/login",
         JSON.stringify({ collegeEmailID: email, password: password }),
         config,
       );
