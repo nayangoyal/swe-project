@@ -26,7 +26,7 @@ const Login = () => {
       console.log(email, password);
       const response = await axios.post(
         "http://swe-project-67jv.onrender.com/authentication/login",
-        JSON.stringify({ collegeEmailID: email, password: password }),
+        { collegeEmailID: email, password: password },
         config,
       );
       console.log("DATAAAAAAA3");
